@@ -1,0 +1,10 @@
+name: first-workflow
+on: workflow_dispatch # makes user manually run
+jobs:
+  job1: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo "Hello world"
+      - name: Ending
+        run: date; echo "Bye" 
