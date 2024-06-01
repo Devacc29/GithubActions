@@ -8,3 +8,10 @@ jobs:
         run: echo "Hello world"
       - name: Ending
         run: date; echo "Bye" 
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: multiline output check
+        run: |
+            date
+            echo "multi line comment"
